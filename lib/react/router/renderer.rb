@@ -46,7 +46,7 @@ module React
           function() {
             var str = '';
             ReactRouter.run(#{routes}, #{location.to_json}, function (Handler) {
-              str = React.renderToString(React.createElement(Handler, #{react_props}));
+              str = React.renderToString(ReactDOM.createElement(Handler, #{react_props}));
             });
             return str;
           }()
