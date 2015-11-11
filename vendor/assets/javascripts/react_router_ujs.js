@@ -37,7 +37,7 @@
       var data = JSON.parse(dataJson);
 
       ReactRouter.run(routes, location, function (Handler) {
-        React.render(React.createElement(Handler, data), routerNode);
+        ReactDOM.render(React.createElement(Handler, data), routerNode);
       });
     }
   };
