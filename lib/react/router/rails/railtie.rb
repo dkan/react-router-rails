@@ -9,6 +9,7 @@ module React
         config.react_router.max_renderers = 10
         config.react_router.timeout = 20 # seconds
         config.react_router.react_js = lambda { File.read(::Rails.application.assets.resolve('react.js')) }
+        config.react_router.react_dom_js = lambda { File.read(::Rails.application.assets.resolve('react_dom.js')) }
         config.react_router.react_router_js = lambda { File.read(::Rails.application.assets.resolve('react_router.js')) }
         config.react_router.route_filenames = ['components.js']
 
